@@ -43,5 +43,3 @@ https://travis-ci.org/
 sync w/ Github Account
 
 [![Build Status](https://travis-ci.org/coffeeipsum/django-blog.svg?branch=master)](https://travis-ci.org/coffeeipsum/django-blog)
-
-create a ` .travis.yml ` file
