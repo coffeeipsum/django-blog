@@ -1,4 +1,6 @@
 # Walk Through Project "Blog"
+[![Build Status](https://travis-ci.org/coffeeipsum/django-blog.svg?branch=master)](https://travis-ci.org/coffeeipsum/django-blog)
+
 
 # First
 wget -q https://git.io/v77xs -O /tmp/setup-workspace.sh && source /tmp/setup-workspace.sh
@@ -35,3 +37,11 @@ go to blog > settings.py and add the url to ALLOWED_HOSTS = [ ]
 
 # Create a .gitignore
 echo -e "*.sqlite3\n*.pyc\n.~c9\n__pycache__/" > .gitignore
+
+# Travis
+https://travis-ci.org/
+sync w/ Github Account
+
+[![Build Status](https://travis-ci.org/coffeeipsum/django-blog.svg?branch=master)](https://travis-ci.org/coffeeipsum/django-blog)
+
+create a ` .travis.yml ` file
