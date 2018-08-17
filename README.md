@@ -43,3 +43,14 @@ https://travis-ci.org/
 sync w/ Github Account
 
 [![Build Status](https://travis-ci.org/coffeeipsum/django-blog.svg?branch=master)](https://travis-ci.org/coffeeipsum/django-blog)
+
+
+# This Blog is using Images
+pip install pillow
+
+# UPDATE requirements.txt after installing Pillow
+pip freeze > requirements.txt
+
+# Finally, migrate!
+./manage.py makemigrations
+./manage.py migrate
