@@ -38,7 +38,7 @@ go to blog > settings.py and add the url to ALLOWED_HOSTS = [ ]
 # Create a .gitignore
 echo -e "*.sqlite3\n*.pyc\n.~c9\n__pycache__/" > .gitignore
 
-# Travis
+# integrate Github and Travis
 https://travis-ci.org/
 sync w/ Github Account
 
