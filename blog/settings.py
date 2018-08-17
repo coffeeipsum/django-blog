@@ -26,7 +26,8 @@ SECRET_KEY = 'e_b4qpaeuu)na1+it0_2sn&3#i*3^2=nn&)@(pq(4w382xw1#9'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'django-blog-coffeeipsum.c9users.io'
+    'django-blog-coffeeipsum.c9users.io',
+    '127.0.0.1', os.environ.get('C9_HOSTNAME')
     ]
 
 
@@ -40,8 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_forms_bootstrap',
-    'posts',
+    'django.contrib.sites',
+    'posts'
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

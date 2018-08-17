@@ -27,6 +27,9 @@ django-admin startproject blog .
 # Make manage.py executable by changing to mode to:
 chmod +x manage.py
 
+# Django & Bootstrap
+sudo pip3 install django-forms-bootstrap
+
 # Lastly, migrate it!
 ./manage.py migrate
 
