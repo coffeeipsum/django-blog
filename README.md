@@ -40,7 +40,7 @@ echo -e "*.sqlite3\n*.pyc\n.~c9\n__pycache__/" > .gitignore
 
 # integrate Github and Travis
 https://travis-ci.org/
-sync w/ Github Account
+Do: sync w/ Github Account
 
 [![Build Status](https://travis-ci.org/coffeeipsum/django-blog.svg?branch=master)](https://travis-ci.org/coffeeipsum/django-blog)
 
