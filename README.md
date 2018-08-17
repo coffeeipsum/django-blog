@@ -19,6 +19,8 @@ sudo pip3 install django==1.11
 # Add requirements.txt
 pip freeze > requirements.txt
 
+# Add Procfile
+
 # Start a new project called Blog
 django-admin startproject blog .
 (don't forget the 'dot', this will add the project in the root directory)
@@ -30,7 +32,8 @@ chmod +x manage.py
 # Django & Bootstrap
 sudo pip3 install django-forms-bootstrap
 
-# Lastly, migrate it!
+# Finally, migrate!
+./manage.py makemigrations
 ./manage.py migrate
 
 # Run the server
@@ -54,9 +57,22 @@ Do: sync w/ Github Account
 # This Blog is using Images
 pip install pillow
 
+
 # UPDATE requirements.txt after installing Pillow
 pip freeze > requirements.txt
 
 # Finally, migrate!
 ./manage.py makemigrations
 ./manage.py migrate
+
+# adding styles to Django via Bootstrap
+sudo pip3 install django_forms_bootstrap
+
+# Deploy to Heroku
+sudo pip3 install pillow
+sudo pip3 install whitenoise
+sudo pip3 install gunicorn
+sudo pip3 install psycopg2
+
+pip3 freeze --local > requirements.txt
+echo web: gunicorn django_blog.wsgi:application > Procfile
