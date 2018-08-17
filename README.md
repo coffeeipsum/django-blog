@@ -10,6 +10,9 @@ Hi coffeeipsum, welcome to your Code Institute Python workspace in c9, remember 
 # Create a new virtual environment (called foo)
 mkvirtualenv foo
 
+# Work on the environment
+workon foo
+
 # Install Djano
 sudo pip3 install django==1.11
 
